@@ -14,6 +14,8 @@
 		F35B18A2225ED74000340BA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35B18A0225ED74000340BA9 /* LaunchScreen.storyboard */; };
 		F35B18AD225ED74000340BA9 /* GetIDFATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B18AC225ED74000340BA9 /* GetIDFATests.swift */; };
 		F35B18B8225ED74000340BA9 /* GetIDFAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35B18B7225ED74000340BA9 /* GetIDFAUITests.swift */; };
+		F3E342C222F0331D00F4C369 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E342C122F0331D00F4C369 /* SystemConfiguration.framework */; };
+		F3E48F0222811D4E006F3EE9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E48F0122811D4E006F3EE9 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		F35B18B3225ED74000340BA9 /* GetIDFAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetIDFAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35B18B7225ED74000340BA9 /* GetIDFAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIDFAUITests.swift; sourceTree = "<group>"; };
 		F35B18B9225ED74000340BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F397A06122AA43C400F07AA5 /* GetIDFA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GetIDFA.entitlements; sourceTree = "<group>"; };
+		F3E342C122F0331D00F4C369 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F3E48F0122811D4E006F3EE9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E342C222F0331D00F4C369 /* SystemConfiguration.framework in Frameworks */,
+				F3E48F0222811D4E006F3EE9 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				F35B18AB225ED74000340BA9 /* GetIDFATests */,
 				F35B18B6225ED74000340BA9 /* GetIDFAUITests */,
 				F35B1895225ED73F00340BA9 /* Products */,
+				F3E48F0022811D4E006F3EE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +105,7 @@
 		F35B1896225ED73F00340BA9 /* GetIDFA */ = {
 			isa = PBXGroup;
 			children = (
+				F397A06122AA43C400F07AA5 /* GetIDFA.entitlements */,
 				F35B1897225ED73F00340BA9 /* AppDelegate.swift */,
 				F35B1899225ED73F00340BA9 /* ViewController.swift */,
 				F35B189B225ED73F00340BA9 /* Main.storyboard */,
@@ -123,6 +132,15 @@
 				F35B18B9225ED74000340BA9 /* Info.plist */,
 			);
 			path = GetIDFAUITests;
+			sourceTree = "<group>";
+		};
+		F3E48F0022811D4E006F3EE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3E342C122F0331D00F4C369 /* SystemConfiguration.framework */,
+				F3E48F0122811D4E006F3EE9 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GetIDFA/GetIDFA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DUP2JGEFH3;
 				INFOPLIST_FILE = GetIDFA/Info.plist;
@@ -450,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GetIDFA/GetIDFA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DUP2JGEFH3;
 				INFOPLIST_FILE = GetIDFA/Info.plist;
