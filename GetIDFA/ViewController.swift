@@ -40,6 +40,11 @@ class ViewController: UIViewController, UITextViewDelegate {
         
         label.selectAll(nil)
     }
+
+    @IBAction func share(_ sender: Any) {
+        let activityViewController = UIActivityViewController(activityItems: [label.text!], applicationActivities: nil)
+        self.present(activityViewController, animated: true, completion: nil)
+    }
 }
 
 
